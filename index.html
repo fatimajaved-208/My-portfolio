@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <title>La Bella Restaurant</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,16 +13,16 @@
 <body>
 
     <!-- ===== NAVBAR ===== -->
+
     <header>
         <nav class="navbar">
 
-            <h2 class="logo">MyPortfolio</h2>
+            <h1 class="logo">La Bella</h1>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
@@ -30,77 +30,115 @@
     </header>
 
 
-    <!-- ===== HOME ===== -->
+    <!-- ===== HERO SECTION ===== -->
+
     <section id="home" class="hero">
 
-        <div class="hero-text">
+        <div class="hero-content">
 
-            <p class="small-text">Hello, I'm</p>
+            <p>Welcome to</p>
 
-            <h1>Fatima Javed</h1>
-
-            <h2>Web Developer</h2>
+            <h2>La Bella Restaurant</h2>
 
             <p>
-                I create clean, responsive and user-friendly websites
-                for small businesses and personal projects.
+                Delicious food, beautiful atmosphere
+                and unforgettable taste.
             </p>
 
-            <a href="#projects" class="btn">View My Projects</a>
-
-        </div>
-
-
-        <div class="hero-image">
-
-            <!-- Apni image ka naam yahan likhna -->
-            <img src="image.jpeg" alt="My Photo">
+            <a href="#menu" class="btn">Explore Menu</a>
 
         </div>
 
     </section>
 
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="section">
+    <!-- ===== MENU SECTION ===== -->
 
-        <h2>About Me</h2>
+    <section id="menu" class="menu-section">
 
-        <p>
-            Hi! I'm Fatima Javed, a beginner web developer who enjoys
-            creating modern and responsive websites. I am currently
-            learning web development and building different projects
-            to improve my skills.
+        <h2>Our Menu</h2>
+
+        <p class="section-description">
+            Freshly prepared dishes made with quality ingredients.
         </p>
 
-        <p>
-            I can create simple websites for small businesses,
-            portfolios, landing pages and other basic web projects.
-        </p>
 
-    </section>
+        <!-- STARTERS -->
 
+        <h3 class="category-title">Starters</h3>
 
-    <!-- ===== SKILLS ===== -->
-    <section id="skills" class="section">
+        <div class="menu-container">
 
-        <h2>My Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>HTML</h3>
-                <p>Website structure and content</p>
+            <div class="food-card">
+                <h3>Chicken Wings</h3>
+                <p>Crispy chicken wings served with special sauce.</p>
+                <span>Rs. 650</span>
             </div>
 
-            <div class="skill-card">
-                <h3>CSS</h3>
-                <p>Design, layout and responsive websites</p>
+            <div class="food-card">
+                <h3>Garlic Bread</h3>
+                <p>Freshly baked bread with garlic and herbs.</p>
+                <span>Rs. 350</span>
             </div>
 
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>Interactive website features</p>
+            <div class="food-card">
+                <h3>Loaded Fries</h3>
+                <p>Crispy fries topped with cheese and sauces.</p>
+                <span>Rs. 450</span>
+            </div>
+
+        </div>
+
+
+        <!-- MAIN COURSE -->
+
+        <h3 class="category-title">Main Course</h3>
+
+        <div class="menu-container">
+
+            <div class="food-card">
+                <h3>Chicken Steak</h3>
+                <p>Grilled chicken steak served with vegetables.</p>
+                <span>Rs. 1,200</span>
+            </div>
+
+            <div class="food-card">
+                <h3>Chicken Pasta</h3>
+                <p>Creamy pasta with grilled chicken and herbs.</p>
+                <span>Rs. 850</span>
+            </div>
+
+            <div class="food-card">
+                <h3>Classic Burger</h3>
+                <p>Juicy chicken burger with fresh vegetables.</p>
+                <span>Rs. 750</span>
+            </div>
+
+        </div>
+
+
+        <!-- DESSERTS -->
+
+        <h3 class="category-title">Desserts</h3>
+
+        <div class="menu-container">
+
+            <div class="food-card">
+                <h3>Chocolate Cake</h3>
+                <p>Soft chocolate cake with rich chocolate topping.</p>
+                <span>Rs. 450</span>
+            </div>
+
+            <div class="food-card">
+                <h3>Brownie</h3>
+                <p>Warm chocolate brownie served with ice cream.</p>
+                <span>Rs. 500</span>
+            </div>
+
+            <div class="food-card">
+                <h3>Ice Cream</h3>
+                <p>Choose from our delicious selection of flavors.</p>
+                <span>Rs. 300</span>
             </div>
 
         </div>
@@ -108,76 +146,43 @@
     </section>
 
 
-    <!-- ===== PROJECTS ===== -->
-    <section id="projects" class="section">
+    <!-- ===== ABOUT SECTION ===== -->
 
-        <h2>My Projects</h2>
+    <section id="about" class="about-section">
 
-        <div class="projects-container">
-
-            <div class="project-card">
-
-    <h3>Restaurant Menu Website</h3>
-
-    <p>
-        A modern and responsive restaurant menu website
-        designed using HTML, CSS and JavaScript.
-    </p>
-
-    <a href="Restaurant menu/" class="project-btn">
-        View Project
-    </a>
-
-</div>
-
-
-            
-
-
-            <!-- Project 3 -->
-           <div class="project-card">
-
-            <h3>Business Landing Page</h3>
-
-            <p>
-                A professional business landing page designed
-                with a modern and responsive layout.
-            </p>
-
-            <a href="Business landing page/" class="project-btn">
-                View Project
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section contact">
-
-        <h2>Let's Work Together</h2>
+        <h2>About Us</h2>
 
         <p>
-            Have a small website project? Feel free to contact me.
+            At La Bella Restaurant, we believe great food brings
+            people together. Our chefs prepare every dish with
+            fresh ingredients and lots of care.
         </p>
 
-        <p>Email: fatookhan208@gmail.com</p>
+    </section>
+
+
+    <!-- ===== CONTACT SECTION ===== -->
+
+    <section id="contact" class="contact-section">
+
+        <h2>Visit Us</h2>
+
+        <p>📍 Main Boulevard, Islamabad</p>
+
+        <p>📞 +92 300 1234567</p>
+
+        <p>✉️ hello@labella.com</p>
+
+        <a href="#" class="btn">Book a Table</a>
 
     </section>
 
 
     <!-- ===== FOOTER ===== -->
+
     <footer>
 
-        <p>
-            © 2026 Fatima Javed. All Rights Reserved.
-        </p>
+        <p>© 2026 La Bella Restaurant. All Rights Reserved.</p>
 
     </footer>
 

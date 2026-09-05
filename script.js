@@ -1,30 +1,39 @@
-// ===== NAVBAR SCROLL EFFECT =====
+// ===== NAVBAR SHADOW ON SCROLL =====
 
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
 
     if (window.scrollY > 50) {
-        header.style.boxShadow = "0 3px 15px rgba(0, 0, 0, 0.3)";
+        header.style.boxShadow = "0 4px 15px rgba(0, 0, 0, 0.5)";
     } else {
         header.style.boxShadow = "none";
     }
 });
 
 
-// ===== PROJECT BUTTON MESSAGE =====
+// ===== BOOK A TABLE BUTTON =====
 
-const projectButtons = document.querySelectorAll(".project-btn");
+const bookingButton = document.querySelector(".contact-section .btn");
 
-projectButtons.forEach(function (button) {
+bookingButton.addEventListener("click", function (event) {
+    event.preventDefault();
 
-    button.addEventListener("click", function (event) {
+    alert("Thank you! Table booking feature will be available soon.");
+});
 
-        if (button.getAttribute("href") === "#") {
-            event.preventDefault();
 
-            alert("Project link will be added soon!");
-        }
+// ===== FOOD CARD HOVER EFFECT =====
 
+const foodCards = document.querySelectorAll(".food-card");
+
+foodCards.forEach(function (card) {
+
+    card.addEventListener("mouseenter", function () {
+        card.style.transform = "translateY(-8px)";
+    });
+
+    card.addEventListener("mouseleave", function () {
+        card.style.transform = "translateY(0)";
     });
 
 });
